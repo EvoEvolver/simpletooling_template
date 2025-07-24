@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN uv pip install -r requirements.txt
+RUN uv pip install --system -r requirements.txt
 
 # Expose default Node.js port
 EXPOSE 3000
