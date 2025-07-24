@@ -8,7 +8,7 @@ COPY . .
 
 RUN apk add --no-cache git
 # Install dependencies
-RUN uv pip install --system -e ./tools
+RUN uv pip install --system -e .
 
 # Expose default Node.js port
 EXPOSE 8000
