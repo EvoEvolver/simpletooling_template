@@ -14,4 +14,4 @@ RUN uv pip install --system -e .
 EXPOSE 8000
 
 # Start the application
-CMD ["python", "tools/main.py"]
+CMD ["python", "main.py"]
