@@ -6,11 +6,12 @@ WORKDIR /app
 # Copy the rest of the application files
 COPY . .
 
+RUN apk add --no-cache git
 # Install dependencies
 RUN uv pip install --system -r requirements.txt
 
 # Expose default Node.js port
-EXPOSE 3000
+EXPOSE 3000# Install git
 
 # Start the application
 CMD ["python", "tools/main.py"]
