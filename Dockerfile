@@ -11,7 +11,7 @@ RUN apk add --no-cache git
 RUN uv pip install --system -r requirements.txt
 
 # Expose default Node.js port
-EXPOSE 3000# Install git
+EXPOSE 8000
 
 # Start the application
 CMD ["python", "tools/main.py"]
